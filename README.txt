@@ -5,7 +5,7 @@
 
 by Koshiro Arai, Tomohiro Shinozaki, Shiro Tanaka and Tosiya Sato
 
-All below have same dependencies
+To implement all below
 ・0.1_MyFunc.R
 ・0.2_Packages.R
 ・1_EstMethod.R
