@@ -5,7 +5,7 @@
 
 by Koshiro Arai, Tomohiro Shinozaki, Shiro Tanaka and Tosiya Sato
 
-To implement all below
+To implement all of the following
 ・0.1_MyFunc.R
 ・0.2_Packages.R
 ・1_EstMethod.R
