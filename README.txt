@@ -6,10 +6,9 @@
 by Koshiro Arai, Tomohiro Shinozaki, Shiro Tanaka and Tosiya Sato
 
 All below have same dependencies
-├── 0.1_MyFunc.R
-├── 0.2_Packages.R
-├── 0.3_SeedValues.R
-└── 1_EstMethod.R
+・0.1_MyFunc.R
+・0.2_Packages.R
+・1_EstMethod.R
 
 2.1_Simulation_1.R
 
