@@ -1,7 +1,4 @@
-########################################################################
-# Doubly Robust Estimation of Log-linear Structural Nested Mean Models #
-# for Binary Outcomes Using Coherent Nuisance Models                   #
-########################################################################
+# Doubly Robust Estimation of Log-linear Structural Nested Mean Models for Binary Outcomes Using Coherent Nuisance Models                   
 
 All below have same dependencies
 ├── 0.1_MyFunc.R
