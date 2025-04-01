@@ -1,15 +1,11 @@
 ##############################################################
 # Additional Simulation S2: evaluation of doubly robusteness #
 ##############################################################
-source("./SubmitPrograms/0_Packages.R")
-source("./SubmitPrograms/0_MyFunc.R")
-
-rm(list = ls()[!str_detect(ls(), "result") & !str_detect(ls(), "seed") & 
-                 !str_detect(ls(), "Est") & !str_detect(ls(), "psi1.true_")])
-
-library(doParallel)
-library(doRNG)
-library(foreach)
+source("0.1_MyFunc.R")
+source("0.2_Packages.R")
+source("1.1_mk_estimation.R")
+source("1.2_DRestimation.R")
+source("1.3_DRestimation_iter.R")
 
 # Number of cores to use
 num_cores <- detectCores() - 1

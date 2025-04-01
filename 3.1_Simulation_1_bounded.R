@@ -2,8 +2,16 @@
 # Simulation 1_bounded baseline confounders + #
 ###############################################
 
-source("./SubmitPrograms/0_Packages.R")
-source("./SubmitPrograms/0_MyFunc.R")
+source("0.1_MyFunc.R")
+source("0.2_Packages.R")
+source("1.1_mk_estimation.R")
+source("1.2_DRestimation.R")
+source("1.3_DRestimation_iter.R")
+
+# Number of cores to use
+num_cores <- detectCores() - 1
+cl <- makeCluster(num_cores)
+registerDoParallel(cl)
 
 # set the scenario
 # =========================================

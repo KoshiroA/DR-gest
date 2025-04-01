@@ -5,10 +5,17 @@
 
 by Koshiro Arai, Tomohiro Shinozaki, Shiro Tanaka and Tosiya Sato
 
-To implement all of the following
-・0.1_MyFunc.R
-・0.2_Packages.R
-・1_EstMethod.R
+------------------------------------------------------------------------
+0.Preparation
+├── 0.1_MyFunc.R
+└── 0.2_Packages.R
+
+1.EstMethod: To obtain doubly robust g-estimators, perform the code in order
+├── 1.1_mk_estimation.R
+├── 1.2_DRestimation.R
+└── 1.3_DRestimation_iter.R
+
+--------Simulation in the main text and supplementary material--------
 
 2.1_Simulation_1.R
 

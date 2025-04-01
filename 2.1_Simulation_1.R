@@ -2,11 +2,11 @@
 # Simulation 1: evaluation of doubly robusteness #
 ##################################################
 
-source("./SubmitPrograms/0_Packages.R")
-source("./SubmitPrograms/0_MyFunc.R")
-
-# rm(list = ls()[!str_detect(ls(), "result") & !str_detect(ls(), "seed") & 
-#                  !str_detect(ls(), "Est") & !str_detect(ls(), "psi1.true_")])
+source("0.1_MyFunc.R")
+source("0.2_Packages.R")
+source("1.1_mk_estimation.R")
+source("1.2_DRestimation.R")
+source("1.3_DRestimation_iter.R")
 
 # Number of cores to use
 num_cores <- detectCores() - 1
@@ -23,7 +23,7 @@ psi2.true = 0.5; psi1.asoc = 1
 psi2.true = -0.5; psi1.asoc = -1
 
 # specify the seed value
-.Random.seed = seed_summary$ 
+.Random.seed = seed_summary$TVpsi1_pos
   
 Cn = foreach(i = 1:1, .combine = rbind,.packages = c("geeM", "tidyverse","brm","gesttools")) %dorng% {
   {

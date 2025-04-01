@@ -1,31 +1,31 @@
-# install.packages("doParallel")
-# install.packages("doRNG")
-# install.packages("foreach")
 
-# install.packages("gesttools")
-# install.packages("brm")
-# install.packages("geeM")
-# install.packages("tidyverse")
-# 
-# install.packages("openxlsx")
-# install.packages("ggplot2")
-# 
-# install.packages("gridExtra")
 
-library(doParallel)
-library(doRNG)
-library(foreach)
+if (requireNamespace("doParallel", quietly = TRUE)) {
+  suppressWarnings(library(doParallel))
+} else {
+  stop("Required package 'doParallel' is not installed.")
+}
 
-# cores <- detectCores()-1
-# registerDoParallel(cores)
-# stopImplicitCluster()
+if (requireNamespace("doRNG", quietly = TRUE)) {
+  suppressWarnings(library(doRNG))
+} else {
+  stop("Required package 'doRNG' is not installed.")
+}
 
-library(gesttools)
-library(brm)
-library(geeM)
-library(tidyverse)
+if (requireNamespace("brm", quietly = TRUE)) {
+  suppressWarnings(library(brm))
+} else {
+  stop("Required package 'brm' is not installed.")
+}
 
-library(openxlsx)
+if (requireNamespace("geeM", quietly = TRUE)) {
+  suppressWarnings(library(geeM))
+} else {
+  stop("Required package 'geeM' is not installed.")
+}
 
-library(ggplot2)
-library(gridExtra)
+if (requireNamespace("tidyverse", quietly = TRUE)) {
+  suppressWarnings(library(tidyverse))
+} else {
+  stop("Required package 'tidyverse' is not installed.")
+}
